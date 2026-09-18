@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naija WhatsApp Add-Up Hub — Join Trending WhatsApp Groups in Nigeria</title>
+<meta name="description" content="Join active Nigerian WhatsApp groups: Gist, Dating, Betting Tips, Jobs, Giveaways. 100% active links.">
+<style>
+  :root{
+    --wa-green:#25D366;
+    --wa-dark:#075E54;
+    --wa-teal:#128C7E;
+    --light-grey:#f5f6f7;
+    --grey:#e5e7eb;
+    --text:#1f2937;
+    --muted:#6b7280;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#fff;color:var(--text)}
+
+  /* ===== Top scrolling social proof bar ===== */
+  .ticker{background:var(--wa-dark);color:#fff;overflow:hidden;white-space:nowrap;padding:8px 0;font-size:13px}
+  .ticker span{display:inline-block;padding-left:100%;animation:ticker 18s linear infinite}
+  @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+
+  /* ===== Header ===== */
+  header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--grey)}
+  .header-inner{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 16px}
+  .logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:20px;color:var(--wa-dark)}
+  .logo .wa-icon{width:32px;height:32px;fill:var(--wa-green)}
+  .header-btn{background:var(--wa-green);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:9px 16px;border-radius:24px}
+
+  /* ===== Hero ===== */
+  .hero{background:linear-gradient(160deg,#f0fdf5,#ffffff);text-align:center;padding:36px 16px 28px}
+  .hero h1{font-size:28px;line-height:1.25;color:var(--wa-dark)}
+  .hero p{margin-top:10px;color:var(--muted);font-size:15px}
+  .hero .highlight{color:var(--wa-green)}
+
+  /* ===== Search ===== */
+  .search-wrap{max-width:520px;margin:20px auto 0;position:relative}
+  .search-wrap input{width:100%;padding:14px 16px 14px 44px;border:2px solid var(--grey);border-radius:30px;font-size:16px;outline:none}
+  .search-wrap input:focus{border-color:var(--wa-green)}
+  .search-wrap svg{position:absolute;left:15px;top:50%;transform:translateY(-50%);width:18px;height:18px;fill:var(--muted)}
+
+  /* ===== Stats ===== */
+  .stats{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;padding:22px 16px 6px}
+  .stat{background:var(--light-grey);border-radius:14px;padding:14px 22px;text-align:center;min-width:150px}
+  .stat b{display:block;font-size:22px;color:var(--wa-teal)}
+  .stat small{color:var(--muted)}
+
+  /* ===== Groups grid ===== */
+  .section-title{text-align:center;font-size:22px;color:var(--wa-dark);margin:34px 0 18px}
+  .grid{max-width:1100px;margin:auto;padding:0 16px;display:grid;grid-template-columns:1fr;gap:14px}
+  .card{border:1px solid var(--grey);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:8px;box-shadow:0 2px 6px rgba(0,0,0,.04);transition:transform .15s}
+  .card:hover{transform:translateY(-3px)}
+  .card-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .card h3{font-size:17px;color:var(--wa-dark)}
+  .badge{font-size:11px;font-weight:700;color:var(--wa-teal);background:#e7fbf0;border-radius:20px;padding:4px 10px;white-space:nowrap}
+  .members{color:var(--muted);font-size:13px;display:flex;align-items:center;gap:5px}
+  .members::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--wa-green);display:inline-block}
+  .join-btn{margin-top:6px;background:var(--wa-green);color:#fff;border:none;border-radius:26px;padding:12px;font-size:15px;font-weight:800;cursor:pointer;letter-spacing:.5px}
+  .join-btn:active{background:var(--wa-teal)}
+
+  /* ===== How it works ===== */
+  .how{background:var(--light-grey);margin-top:40px;padding:36px 16px}
+  .steps{max-width:900px;margin:auto;display:grid;grid-template-columns:1fr;gap:14px}
+  .step{background:#fff;border-radius:16px;padding:22px;text-align:center;border:1px solid var(--grey)}
+  .step .num{width:38px;height:38px;border-radius:50%;background:var(--wa-green);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:18px}
+  .step b{display:block;margin-bottom:4px;color:var(--wa-dark)}
+  .step p{color:var(--muted);font-size:14px}
+
+  /* ===== Footer ===== */
+  footer{background:var(--wa-dark);color:#d1e7dd;padding:28px 16px;text-align:center;font-size:12px;line-height:1.7}
+  footer .foot-logo{font-weight:800;color:#fff;font-size:16px;margin-bottom:8px}
+
+  /* ===== Modal ===== */
+  .modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:100;align-items:center;justify-content:center;padding:16px}
+  .modal-bg.open{display:flex}
+  .modal{background:#fff;border-radius:18px;max-width:360px;width:100%;padding:24px;text-align:center;animation:pop .2s ease}
+  @keyframes pop{from{transform:scale(.9);opacity:0}to{transform:scale(1);opacity:1}}
+  .modal h3{color:var(--wa-dark);margin-bottom:6px}
+  .modal p{color:var(--muted);font-size:14px;margin-bottom:14px}
+  .modal input{width:100%;padding:13px;border:2px solid var(--grey);border-radius:12px;font-size:16px;outline:none;margin-bottom:12px}
+  .modal input:focus{border-color:var(--wa-green)}
+  .modal .submit{width:100%;background:var(--wa-green);color:#fff;border:none;border-radius:12px;padding:13px;font-size:16px;font-weight:800;cursor:pointer}
+  .modal .close{margin-top:12px;background:none;border:none;color:var(--muted);font-size:14px;cursor:pointer;text-decoration:underline}
+
+  /* ===== Tablet / Desktop ===== */
+  @media(min-width:640px){ .grid{grid-template-columns:repeat(2,1fr)} .steps{grid-template-columns:repeat(3,1fr)} .hero h1{font-size:34px} }
+  @media(min-width:960px){ .grid{grid-template-columns:repeat(3,1fr)} }
+</style>
+</head>
+<body>
+
+<!-- Scrolling social proof bar -->
+<div class="ticker"><span id="tickerText">🔥 Tolu just joined Football Gist Hub — 2 mins ago &nbsp;&nbsp;•&nbsp;&nbsp; 🔥 Chidi just joined Betting Tips Daily — 3 mins ago &nbsp;&nbsp;•&nbsp;&nbsp; 🔥 Amaka just joined Lagos Hookup Zone — 5 mins ago &nbsp;&nbsp;•&nbsp;&nbsp; 🔥 Emeka just joined Nigeria Jobs Alert — 6 mins ago</span></div>
+
+<!-- Header -->
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <svg class="wa-icon" viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.9 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.3 1.6h.4c6.6 0 12-5.3 12-11.9S22.6 3 16 3zm0 21.8c-2 0-3.9-.6-5.5-1.6l-.4-.2-4.3 1.4 1.4-4.1-.3-.4c-1.2-1.7-1.9-3.7-1.9-5.9C5 9 10 4.9 16 4.9S27 9 27 14.9s-5 9.9-11 9.9zm5.7-7.4c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.6l.5-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+      WA Add-Up
+    </div>
+    <a class="header-btn" href="#groups">Join Groups</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>Join Trending WhatsApp<br>Groups in <span class="highlight">Nigeria</span></h1>
+  <p>Gist • Hookup • Betting Tips • Jobs • Giveaways — 100% Active Links</p>
+
+  <div class="search-wrap">
+    <svg viewBox="0 0 24 24"><path d="M15.5 14h-.8l-.3-.3a6.5 6.5 0 1 0-.7.7l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
+    <input type="text" id="searchInput" placeholder="Search group (e.g. Dating, Football, Jobs)">
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>15,000+</b><small>Members Added Today</small></div>
+    <div class="stat"><b>500+</b><small>Active Groups</small></div>
+  </div>
+</section>
+
+<!-- Groups grid -->
+<h2 class="section-title" id="groups">🔥 Trending Groups</h2>
+<div class="grid" id="groupGrid"></div>
+
+<!-- How it works -->
+<section class="how">
+  <h2 class="section-title">How It Works</h2>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><b>Choose Group</b><p>Browse trending groups and pick the one you like.</p></div>
+    <div class="step"><div class="num">2</div><b>Enter Number</b><p>Drop your WhatsApp number in the quick form.</p></div>
+    <div class="step"><div class="num">3</div><b>Get Added</b><p>Receive your instant invite link and start gisting!</p></div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="foot-logo">WA Add-Up</div>
+  Disclaimer: This website is not affiliated with, endorsed by, or sponsored by WhatsApp LLC or Meta Platforms, Inc.
+  All group links are submitted by community admins. We are not responsible for the content of any group.
+  Must be 18+ to join adult categories. © 2026 Naija WhatsApp Add-Up Hub.
+</footer>
+
+<!-- Join modal -->
+<div class="modal-bg" id="modalBg">
+  <div class="modal">
+    <h3>Get Instant Invite</h3>
+    <p id="modalGroupName">Enter your WhatsApp number to get an instant invite.</p>
+    <input type="tel" id="phoneInput" placeholder="e.g. 0803 123 4567" inputmode="tel">
+    <button class="submit" id="submitBtn">SUBMIT & JOIN</button>
+    <button class="close" id="closeBtn">Cancel</button>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   ✏️ EDIT YOUR GROUPS HERE — replace the "link" values with
+   your real chat.whatsapp.com/XXXX invite links.
+   ============================================================ */
+const GROUPS = [
+  { name: "Naija Gist & Vibes",      members: "2.4k",  cat: "Gist",      link: "https://chat.whatsapp.com/PLACEHOLDER1" },
+  { name: "Lagos Hookup Zone",       members: "1.2k",  cat: "Hookup",    link: "https://chat.whatsapp.com/PLACEHOLDER2" },
+  { name: "Betting Tips Daily",      members: "3.1k",  cat: "Betting",   link: "https://chat.whatsapp.com/PLACEHOLDER3" },
+  { name: "Nigeria Jobs Alert",      members: "4.5k",  cat: "Jobs",      link: "https://chat.whatsapp.com/PLACEHOLDER4" },
+  { name: "Giveaways & Awoof",       members: "1.8k",  cat: "Giveaway",  link: "https://chat.whatsapp.com/PLACEHOLDER5" },
+  { name: "Football Gist Hub",       members: "2.9k",  cat: "Football",  link: "https://chat.whatsapp.com/PLACEHOLDER6" },
+  { name: "Abuja Dating Connect",    members: "1.1k",  cat: "Dating",    link: "https://chat.whatsapp.com/PLACEHOLDER7" },
+  { name: "Naija Music & Videos",    members: "2.2k",  cat: "Gist",      link: "https://chat.whatsapp.com/PLACEHOLDER8" },
+  { name: "Sporty Bet VIP Tips",     members: "1.6k",  cat: "Betting",   link: "https://chat.whatsapp.com/PLACEHOLDER9" },
+  { name: "Remote Jobs Nigeria",     members: "3.3k",  cat: "Jobs",      link: "https://chat.whatsapp.com/PLACEHOLDER10" },
+  { name: "PH City Hookup",          members: "900",   cat: "Hookup",    link: "https://chat.whatsapp.com/PLACEHOLDER11" },
+  { name: "Free Data & Airtime",     members: "2.7k",  cat: "Giveaway",  link: "https://chat.whatsapp.com/PLACEHOLDER12" },
+];
+
+/* ===== Render cards ===== */
+const grid = document.getElementById("groupGrid");
+function renderGroups(filter = "") {
+  grid.innerHTML = "";
+  const f = filter.trim().toLowerCase();
+  GROUPS
+    .filter(g => !f || g.name.toLowerCase().includes(f) || g.cat.toLowerCase().includes(f))
+    .forEach((g, i) => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <div class="card-top">
+          <h3>${g.name}</h3>
+          <span class="badge">${g.cat}</span>
+        </div>
+        <div class="members">${g.members} members</div>
+        <button class="join-btn" data-index="${GROUPS.indexOf(g)}">JOIN NOW</button>`;
+      grid.appendChild(card);
+    });
+}
+renderGroups();
+
+/* ===== Search ===== */
+document.getElementById("searchInput").addEventListener("input", e => renderGroups(e.target.value));
+
+/* ===== Modal ===== */
+const modalBg = document.getElementById("modalBg");
+let currentGroup = null;
+
+grid.addEventListener("click", e => {
+  const btn = e.target.closest(".join-btn");
+  if (!btn) return;
+  currentGroup = GROUPS[btn.dataset.index];
+  document.getElementById("modalGroupName").textContent =
+    `Enter your WhatsApp number to get an instant invite to "${currentGroup.name}".`;
+  modalBg.classList.add("open");
+});
+
+document.getElementById("closeBtn").onclick = () => modalBg.classList.remove("open");
+modalBg.addEventListener("click", e => { if (e.target === modalBg) modalBg.classList.remove("open"); });
+
+/* ===== Submit → open WhatsApp invite ===== */
+document.getElementById("submitBtn").onclick = () => {
+  const phone = document.getElementById("phoneInput").value.trim();
+  if (phone.replace(/\D/g, "").length < 10) { alert("Please enter a valid WhatsApp number."); return; }
+  window.open(currentGroup.link, "_blank");
+  modalBg.classList.remove("open");
+  document.getElementById("phoneInput").value = "";
+};
+
+/* ===== Rotating social proof ticker ===== */
+const names = ["Tolu","Chidi","Amaka","Emeka","Ngozi","Bola","Yusuf","Ada"];
+const cats  = ["Football Gist Hub","Betting Tips Daily","Lagos Hookup Zone","Nigeria Jobs Alert","Giveaways & Awoof","Naija Gist & Vibes"];
+setInterval(() => {
+  const n = names[Math.floor(Math
